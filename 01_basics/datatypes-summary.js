@@ -48,6 +48,31 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubeName = "xyzChanel";
+let anotherName =  myYoutubeName;
+anotherName = "abcChanel"
+
+
+// console.log(myYoutubeName);
+// console.log(anotherName);
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@bank"
+}
+
+let userTwo = userOne
+userTwo.email = "user2@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
